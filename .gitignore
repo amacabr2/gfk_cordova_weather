@@ -2,4 +2,5 @@
 hooks/
 plugins/
 res/
+js/vendor/
 .sass-cache/
