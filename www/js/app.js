@@ -1,8 +1,8 @@
-document.addEventListener(deviceready, function() {
+//document.addEventListener(deviceready, function() {
 
-}, false);
+//}, false);
 
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider
