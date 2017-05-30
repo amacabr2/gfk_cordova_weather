@@ -4,15 +4,13 @@
         Bienvenue sur l'application Weather qui va te permettre de savoir la météo. <br> Tu peux choisir la ville pour laquelle tu veux la météo ou faire via ta position.
     </p>
 
-    <p>
-        <form ng-submit="search">
-            <input type="text" class="text" placeholder="Rechercher une ville" ng-model="city">
-        </form>
-    </p>
+    <form ng-submit="search()">
+        <p><input type="text" class="text" placeholder="Rechercher une ville" ng-model="city"></p>
+        <p><input type="submit" class="submit" value="Rechercher"></p>
+    </form>
 
-
-    <p>
-        <input type="submit" class="submit" value="Rechercher">
-    </p>
+    <div class="row-title">
+        {{ weather.city.name }}/{{ weather.city.country }}
+    </div>
 
 </section>
