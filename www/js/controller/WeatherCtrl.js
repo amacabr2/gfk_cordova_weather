@@ -10,8 +10,7 @@ app.controller('WeatherCtrl', function($scope, $http) {
     }
 
     httpSuccess = function(res) {
-        alert(1);
-        console.log(res.weather);
+        var time = "40.15"
         $scope.weather = res;
     }
 

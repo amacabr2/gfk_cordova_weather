@@ -1,16 +1,24 @@
-<section class="panel panel-padding" ng-controller="WeatherCtrl">
+<section ng-controller="WeatherCtrl">
 
-    <p>
-        Bienvenue sur l'application Weather qui va te permettre de savoir la météo. <br> Tu peux choisir la ville pour laquelle tu veux la météo ou faire via ta position.
-    </p>
+    <div class="loader">
 
-    <form ng-submit="search()">
-        <p><input type="text" class="text" placeholder="Rechercher une ville" ng-model="city"></p>
-        <p><input type="submit" class="submit" value="Rechercher"></p>
-    </form>
-
-    <div class="row-title">
-        {{ weather.city.name }}/{{ weather.city.country }}
     </div>
+
+    <section class="panel panel-padding">
+
+        <p>
+            Bienvenue sur l'application Weather qui va te permettre de savoir la météo. <br> Tu peux choisir la ville pour laquelle tu veux la météo ou faire via ta position.
+        </p>
+
+        <form ng-submit="search()">
+            <p><input type="text" class="text" placeholder="Rechercher une ville" ng-model="city"></p>
+            <p><input type="submit" class="submit" value="Rechercher"></p>
+        </form>
+
+        <div class="row-title">
+            {{ weather.name }}
+        </div>
+
+    </section>
 
 </section>
