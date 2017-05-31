@@ -16,7 +16,13 @@
         </form>
 
         <div class="row-title">
-            {{ weather.name }}
+            {{ weather.city.name }} / {{ weather.city.country}}
+        </div>
+
+        <div class="row" ng-repeat="t in weather.list">
+            <div class="temperature">
+                {{ t.main.temp }} °C
+            </div>
         </div>
 
     </section>
