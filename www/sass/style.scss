@@ -138,16 +138,28 @@ input.submit,
     background-color: #394163;
     margin: 1px 0;
     position: relative;
+    line-height: 60px;
+    /* hauteur de ligne (identique) */
+    white-space: nowrap;
+    /* interdiction de passer à la ligne */
 }
 
 .row-active {}
 
+.date {
+    position: absolute;
+    left: 14%;
+}
+
+.owf {
+    position: absolute;
+    left: 2%;
+}
+
 .temperature {
     font-weight: bold;
     position: absolute;
-    top: 50%;
     right: 2%;
-    @include transform(translateY(-50%));
 }
 
 

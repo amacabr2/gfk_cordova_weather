@@ -15,14 +15,22 @@
             <p><input type="submit" class="submit" value="Rechercher"></p>
         </form>
 
-        <div class="row-title">
-            {{ weather.city.name }} / {{ weather.city.country}}
-        </div>
+        <div ng-show="found">
 
-        <div class="row" ng-repeat="t in weather.list">
-            <div class="temperature">
-                {{ t.main.temp }} °C
+            <div class="row-title">
+                {{ weather.city.name }} / {{ weather.city.country}}
             </div>
+
+            <div class="row" ng-repeat="t in weather.list">
+                <div class="temperature">
+                    {{ Math.round(t.main.temp) }} °C
+                </div>
+                <div class="date">
+                    {{ t.dt * 1000 | date: 'EEE'}}
+                </div>
+                <i class="owf owf-{{ t.weather[0].id }} owf-3x"></i>
+            </div>
+
         </div>
 
     </section>

@@ -1,6 +1,8 @@
 app.controller('WeatherCtrl', function($scope, $http) {
 
+    $scope.Math = Math;
     $scope.loader = false;
+    $scope.found = false;
 
     $scope.search = function() {
         var appid = "555f2a1d504b2f6eeae38744267aef59";
@@ -13,8 +15,12 @@ app.controller('WeatherCtrl', function($scope, $http) {
     }
 
     httpSuccess = function(res) {
-        $scope.loader = false
+        $scope.loader = false;
+        $scope.found = true;
         $scope.weather = res;
     }
+
+    $scope.city = "Paris";
+    $scope.search();
 
 });
