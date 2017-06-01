@@ -40,13 +40,13 @@ angular.module("ngLocale", [], ["$provide", function($provide) {
                 "d\u00e9cembre"
             ],
             "SHORTDAY": [
-                "dim.",
-                "lun.",
-                "mar.",
-                "mer.",
-                "jeu.",
-                "ven.",
-                "sam."
+                "Dim.",
+                "Lun.",
+                "Mar.",
+                "Mer.",
+                "Jeu.",
+                "Ven.",
+                "Sam."
             ],
             "SHORTMONTH": [
                 "janv.",
