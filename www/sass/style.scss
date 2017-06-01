@@ -147,13 +147,13 @@ input.submit,
 .row-active {}
 
 .date {
-    position: absolute;
-    left: 18%;
+    float: left;
+    padding-left: 2%;
 }
 
 .owf {
-    position: absolute;
-    left: 5%;
+    float: left;
+    padding-left: 2%;
 }
 
 .temperature {

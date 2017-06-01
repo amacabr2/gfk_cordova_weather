@@ -233,14 +233,14 @@ input.submit,
 
 /* line 149, ../sass/style.scss */
 .date {
-  position: absolute;
-  left: 18%;
+  float: left;
+  padding-left: 2%;
 }
 
 /* line 154, ../sass/style.scss */
 .owf {
-  position: absolute;
-  left: 5%;
+  float: left;
+  padding-left: 2%;
 }
 
 /* line 159, ../sass/style.scss */
