@@ -25,6 +25,10 @@ app.controller('WeatherCtrl', function($scope, $http) {
         return id == $scope.id;
     }
 
+    $scope.geolocate = function() {
+
+    }
+
     httpSuccess = function(res) {
         $scope.panel = 1;
         $scope.loader = false;

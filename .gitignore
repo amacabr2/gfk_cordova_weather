@@ -1,6 +1,7 @@
 .idea/
 hooks/
 plugins/
+node_modules/
 res/
 js/vendor/
 .sass-cache/

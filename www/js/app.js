@@ -1,6 +1,6 @@
-//document.addEventListener(deviceready, function() {
-
-//}, false);
+document.addEventListener(deviceready, function() {
+    navigator.splashscreen.hide();
+}, false);
 
 var app = angular.module('app', ['ngRoute']);
 
