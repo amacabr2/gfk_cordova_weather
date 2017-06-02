@@ -133,18 +133,21 @@ input.submit,
     font-weight: bold;
 }
 
-.row {
+.row-info {
     height: 60px;
     background-color: #394163;
     margin: 1px 0;
     position: relative;
     line-height: 60px;
-    /* hauteur de ligne (identique) */
     white-space: nowrap;
-    /* interdiction de passer à la ligne */
 }
 
-.row-active {}
+.row-active {
+    height: 180px;
+    background-color: #E64C65;
+    color: #ffffff;
+    position: relative;
+}
 
 .date {
     float: left;
@@ -160,6 +163,13 @@ input.submit,
     font-weight: bold;
     position: absolute;
     right: 2%;
+}
+
+.plus {
+    font-size: 10px;
+    text-align: center;
+    bottom: 10%;
+    padding: 10%;
 }
 
 
