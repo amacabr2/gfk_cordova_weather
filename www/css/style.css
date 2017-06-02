@@ -174,9 +174,9 @@ input.submit,
 /* line 93, ../sass/style.scss */
 .back {
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: 10px;
-  /*background:url(../img/back.png) center center no-repeat;*/
+  background: url(../img/back.png) center center no-repeat;
   z-index: 10;
   width: 60px;
   height: 60px;

@@ -2,7 +2,7 @@ app.controller('WeatherCtrl', function($scope, $http) {
 
     $scope.Math = Math;
     $scope.loader = false;
-    $scope.found = false;
+    $scope.panel = 0;
     $scope.id = 0;
 
     $scope.search = function() {
@@ -26,12 +26,9 @@ app.controller('WeatherCtrl', function($scope, $http) {
     }
 
     httpSuccess = function(res) {
+        $scope.panel = 1;
         $scope.loader = false;
-        $scope.found = true;
         $scope.weather = res;
     }
-
-    $scope.city = "Paris";
-    $scope.search();
 
 });
