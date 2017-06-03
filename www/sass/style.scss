@@ -49,6 +49,10 @@ p {
     @include clearfix;
 }
 
+b {
+    font-weight: bold;
+}
+
 input.text {
     display: block;
     width: 100%;
